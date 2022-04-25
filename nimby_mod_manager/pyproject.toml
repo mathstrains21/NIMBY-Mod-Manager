@@ -1,0 +1,52 @@
+[tool.briefcase]
+project_name = "NIMBY Mod Manager"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/nimby_mod_manager"
+license = "MIT license"
+author = 'Alex Sittampalam'
+author_email = "alex@example.com"
+
+[tool.briefcase.app.nimby_mod_manager]
+formal_name = "NIMBY Mod Manager"
+description = "A mod manager for the game NIMBY Rails"
+icon = "src/nimby_mod_manager/resources/nimby_mod_manager"
+sources = ['src/nimby_mod_manager']
+requires = [
+]
+
+
+[tool.briefcase.app.nimby_mod_manager.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.nimby_mod_manager.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev32',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.nimby_mod_manager.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev32',
+]
+
+# Mobile deployments
+[tool.briefcase.app.nimby_mod_manager.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.nimby_mod_manager.android]
+requires = [
+    'toga-android>=0.3.0.dev32'
+]

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.6
+Name: nimby_mod_manager
+Formal-Name: NIMBY Mod Manager
+App-ID: com.example.nimby_mod_manager
+Version: 0.0.1
+Home-page: https://example.com/nimby_mod_manager
+Author: Alex Sittampalam
+Author-email: alex@example.com
+Summary: A mod manager for the game NIMBY Rails
